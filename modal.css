@@ -1,0 +1,153 @@
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 0vh; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+
+/* Modal Content */
+.modal-content {
+    display: none;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #8d8d8d;
+    border-radius: 6px ;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.modal-body {
+    padding: 2px 16px;
+    border-bottom: solid whitesmoke;
+    height: 20vh;
+    overflow-y: scroll;
+}
+
+.modal-footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    border-bottom-right-radius: 6px ;
+    border-bottom-left-radius: 6px;
+}
+.modal-header{
+    display: flex;
+    flex-direction: row;
+    padding: 2px 16px;
+    background-color: white;
+    color: black;
+    border-bottom: solid whitesmoke;
+    border-top-right-radius: 6px ;
+    border-top-left-radius: 6px;
+}
+.close{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    font-size: 3em;
+    color: lightgray;
+    background: none;
+    border: none;
+
+}
+.heading{
+    flex-grow: 11;
+}
+
+
+.btn:hover{
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1em;
+    color: blue;
+    transition: 0.5s;
+}
+.form-control:focus{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+.nav-link{
+    color: white;
+    text-underline: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+button:focus{
+    outline: none;
+}
+.btn{
+    background: blue;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1em;
+    color: white;
+    height: 30px;
+    transition: 0.5s;
+    align-self: center;
+}
+.btn-div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+
+}
+@media only screen and (min-width: 320px) and (max-width: 992px) {
+    .modal-content{
+        width: 80%;
+    }
+    .btn{
+        background: blue;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 1em;
+        color: white;
+        height: 30px;
+        transition: 0.5s;
+    }
+
+
+}
+
+@media only screen and (min-width: 993px) {
+
+
+    .btn{
+        background: blue;
+        border: 1px solid white;
+        border-radius: 5px;
+        font-size: 1em;
+        color: white;
+        height: 40px;
+        transition: 0.5s;
+        align-self: center;
+        margin-right: 1vw;
+    }
+    .modal-body{
+        font-size: 1.4em;
+    }
+}
